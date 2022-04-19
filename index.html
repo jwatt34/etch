@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Etch-a-Sketch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Etch-<span>A</span>-Sketch</h1>
+  </div>
+  <div class="options">
+    <select class="form-select-sm" name="size" id="size" onmouseup="chooseSize(this.value)">
+      <option value="16">16x16</option>
+      <option value="32">32x32</option>
+      <option value="64">64x64</option>
+      <option value="128">128x128</option>
+    </select>
+    <button class="btn btn-dark color-choice" type="button" name="black">black</button>
+    <button class="btn btn-dark color-choice" type="button" name="random">random</button>
+    <button class="btn btn-dark color-choice" type="button" name="white">eraser</button>
+    <button class="btn btn-dark reset-btn" type="button" name="button">reset</button>
+  </div>
+  <div class="container">
+    <div class="grid-container"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

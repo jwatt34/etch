@@ -1,0 +1,57 @@
+:root{
+  --grid-cols: 1;
+  --grid-rows: 1;
+  --grid-size: 600px;
+}
+
+body{
+  background-color: #e3e3e3;
+  text-align: center;
+  padding: 4%
+}
+
+span{
+  color:white;
+}
+
+.options{
+  margin: 5% auto;
+}
+
+.form-select-sm{
+  background-color: black;
+  border-radius: 70%;
+  color:white;
+  height: 39px;
+  width: 80px;
+  padding-top: 1px;
+}
+
+.options button{
+  border-radius: 70%;
+}
+
+.btn:hover{
+  color: #74fc72;
+  opacity: .9;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container{
+  width: var(--grid-size);
+  height: var(--grid-size);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  display: grid;
+  box-shadow: 0 0 15px #1dff19;
+}
+
+.box{
+  background-color: white;
+  box-shadow: 0 0 4px #d4d4d4;
+}
