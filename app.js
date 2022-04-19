@@ -6,10 +6,10 @@ let color = '';
 
 function createGrid(size) {
   let container = document.querySelector('.grid-container');
-$(container).css('--grid-rows', size);
+  $(container).css('--grid-rows', size);
   $(container).css('--grid-cols', size);
   for (let i = 0; i < Math.pow(size, 2); i++) {
-let square = $('<div />');
+    let square = $('<div />');
     $(square).on('mouseover', function() {
       if (color !== 'random') {
         $(this).css('background-color', colorChosen ? color : 'white');
@@ -34,9 +34,10 @@ $('.color-choice').click(function() {
   color = this.name;
 });
 
-$('.reset-btn').click(function(){
+$('.reset-btn').click(function() {
   const squares = $('.grid-container div');
   $(squares).css('background-color', 'white');
 })
 
-createGrid(default);
+createGrid(
+  default);
